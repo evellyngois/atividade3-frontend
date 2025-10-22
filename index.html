@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONG Esperança</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Cabeçalho e menu -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand">
+        <img src="imagens/logo.jpeg" alt="Logo da ONG Esperança" width="40" height="40">
+        ONG Esperança
+      </a>
+
+      <!-- Botão do menu mobile -->
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+      <!-- Navegação -->
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#" class="nav-link active" data-page="home">Início</a>
+
+        <!-- Submenu Projetos -->
+        <div class="has-submenu">
+          <button class="nav-item" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-projetos">
+            Projetos ▾
+          </button>
+          <div id="submenu-projetos" class="submenu" role="menu">
+            <a role="menuitem" href="#" data-page="projetos">Todos os Projetos</a>
+            <a role="menuitem" href="#" data-page="educacao">Educação & Capacitação</a>
+            <a role="menuitem" href="#" data-page="saude">Saúde & Bem-estar</a>
+            <a role="menuitem" href="#" data-page="voluntariado">Voluntariado & Doações</a>
+          </div>
+        </div>
+
+        <a href="#" class="nav-link" data-page="cadastro">Cadastro</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="container">
+    <section id="conteudo" class="section">
+      <!-- O SPA vai trocar este conteúdo dinamicamente -->
+      <h1>Bem-vindo!</h1>
+      <p>Use o menu acima para navegar entre as páginas.</p>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer center">
+    <p>© 2025 ONG Esperança — Desenvolvido por <strong>Evellyn Gois</strong></p>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/spa.js"></script>
+  <script src="js/validacao.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
